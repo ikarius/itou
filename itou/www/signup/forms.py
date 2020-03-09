@@ -1,12 +1,12 @@
+from allauth.account.forms import SignupForm
 from django import forms
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.utils.safestring import mark_safe
-from django.utils.translation import gettext as _, gettext_lazy
+from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy
 
-from allauth.account.forms import SignupForm
-
-from itou.prescribers.models import PrescriberOrganization, PrescriberMembership
+from itou.prescribers.models import PrescriberMembership, PrescriberOrganization
 from itou.siaes.models import Siae, SiaeMembership
 from itou.utils.validators import validate_siret
 

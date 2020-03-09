@@ -2,7 +2,6 @@
 Handle multiple user types sign up with django-allauth.
 """
 from allauth.account.views import SignupView
-
 from django.db import transaction
 from django.shortcuts import render
 from django.views.decorators.http import require_GET

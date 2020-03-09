@@ -1,8 +1,10 @@
 from django.test import TestCase
 
-from itou.siaes.factories import SiaeFactory
-from itou.siaes.factories import SiaeWithMembershipAndJobsFactory
-from itou.siaes.factories import SiaeWithMembershipFactory
+from itou.siaes.factories import (
+    SiaeFactory,
+    SiaeWithMembershipAndJobsFactory,
+    SiaeWithMembershipFactory,
+)
 from itou.siaes.models import Siae
 
 

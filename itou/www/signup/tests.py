@@ -1,15 +1,15 @@
 from allauth.account.forms import default_token_generator
 from allauth.account.utils import user_pk_to_url_str
-
 from django.conf import settings
 from django.contrib.auth import get_user_model
 from django.core import mail
 from django.test import TestCase
 from django.urls import reverse
 
-from itou.prescribers.factories import PrescriberOrganizationFactory
-from itou.prescribers.factories import PrescriberOrganizationWithMembershipFactory
-
+from itou.prescribers.factories import (
+    PrescriberOrganizationFactory,
+    PrescriberOrganizationWithMembershipFactory,
+)
 from itou.siaes.factories import SiaeFactory
 from itou.siaes.models import Siae
 from itou.users.factories import DEFAULT_PASSWORD, JobSeekerFactory
